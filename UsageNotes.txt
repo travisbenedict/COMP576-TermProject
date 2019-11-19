@@ -1,0 +1,20 @@
+Usage Notes
+
+#Use jupyter notebooks remotely
+ssh -i "TravisBenedict.pem" -L 8157:127.0.0.1:8888 ubuntu@<ip>
+source activate tensorflow_p36
+Run jupyter notebooks
+Copy the address given by the jupyter notebook command into browser
+
+#Use GPU with tensorflow in jupyter notebooks
+Click new 
+Select Environment (conda_tensorflow_p36)
+
+#View Tensorboard locally
+"ssh -i "TravisBenedict.pem" -L 16006:127.0.0.1:6006 ubuntu@<ip>?"
+run tensorboard
+go to "http://127.0.0.1:16006" in browser
+
+
+
+
