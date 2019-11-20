@@ -5,6 +5,7 @@ ssh -i "TravisBenedict.pem" -L 8157:127.0.0.1:8888 ubuntu@<ip>
 source activate tensorflow_p36
 Run jupyter notebooks
 Copy the address given by the jupyter notebook command into browser
+Replace 8888 with 8157 in the left side of the URL
 
 #Use GPU with tensorflow in jupyter notebooks
 Click new 
