@@ -22,9 +22,9 @@ def split_folder(data_dir, train_pct, val_pct):
     glob_imgs = os.path.join(data_dir,IMG_SUFFIX)
     glob_masks = os.path.join(data_dir, MASK_SUFFIX)
 
-    img_paths = np.array(glob.glob(glob_imgs))
-    mask_paths = np.array(glob.glob(glob_masks))
-
+    img_paths = np.array(sorted(glob.glob(glob_imgs)))
+    mask_paths = np.array(sorted(glob.glob(glob_masks)))
+    
     num_imgs = len(img_paths)
     index_lst = list(range(num_imgs))
 
