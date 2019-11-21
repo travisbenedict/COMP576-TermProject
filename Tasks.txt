@@ -1,0 +1,10 @@
+Model Training:
+0. Exploratory Data Analysis
+1. Create training, validation and test sets
+    1. 70% Training, 15% validation, 15% Test
+    2. Apply data augmentation to the training data
+2. Test prediction using the baseline pretrained model
+3. Freeze certain layers of model and retrain
+4. Repeat 2 and 3 until results are good enough
+Destriding:
+Insert steps here
