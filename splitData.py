@@ -74,7 +74,7 @@ def copy_list_to_dir(file_list, subdir,  dir="NewData"):
 
     for file in file_list:
         base_name = os.path.basename(file)
-        shutil.copy(file, os.path.join(subdir, base_name)
+        shutil.copy(file, os.path.join(subdir, base_name))
 
 
 if __name__ == "__main__":
