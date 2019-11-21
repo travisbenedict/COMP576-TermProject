@@ -43,11 +43,17 @@ def split_folder(data_dir, train_pct, val_pct):
 
     # Write the lists to their own directories
     copy_list_to_dir(train_imgs, "train")
+    print("Moved images into: train")
     copy_list_to_dir(train_masks, "train")
+    print("Moved masks into: train")
     copy_list_to_dir(val_imgs, "val")
+    print("Moved images into: val")
     copy_list_to_dir(val_masks, "val")
+    print("Moved masks into: val")
     copy_list_to_dir(test_imgs, "test")
+    print("Moved images into: test")
     copy_list_to_dir(test_masks, "test")
+    print("Moved masks into: test")
 
 
 def copy_list_to_dir(file_list, subdir,  dir="NewData"):
@@ -68,9 +74,7 @@ def copy_list_to_dir(file_list, subdir,  dir="NewData"):
 
     for file in file_list:
         base_name = os.path.basename(file)
-        shutil.copy(base_name, os.path.join(subdir, base_name))
-
-    print("Moved files into: ", subdir)
+        shutil.copy(file, os.path.join(subdir, base_name)
 
 
 if __name__ == "__main__":
